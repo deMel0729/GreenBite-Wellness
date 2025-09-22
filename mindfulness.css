@@ -1,0 +1,355 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    scroll-padding-top: 32px; 
+    list-style: none;
+    text-decoration: none;
+    scroll-behavior: smooth;
+    font-family: "Poppins", sans-serif;
+}
+
+*::selection{
+    color: white;
+    background-color: #A1D998;
+}
+
+header{
+    position: fixed;
+    width: 100%;
+    top: 0px;
+    right: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 10% ;
+    transition: 0.2s;
+    z-index: 1000;
+    backdrop-filter: blur(2px);
+
+}
+
+
+.logo{
+    display: flex;
+    align-items: center;
+    font-size: 16px ;
+    font-weight: 600;
+    color: #41ab5d;
+
+}
+
+.logo img{
+    width: 35px;
+    margin-right: 10px;
+
+}
+
+.navbar{
+    display: flex;
+
+   
+}
+
+.navbar a{
+    padding: 10px 20px;
+    font-size: 16px;
+    color:  #41ab5d;
+    font-weight: bolder;
+        
+}
+
+.navbar a:hover{
+    color: white;
+    background-color: #A1D998;
+    border-radius: 25px;
+
+}
+
+  body {
+
+    margin: 0;
+    height: 100vh;
+   overflow-y: auto; /* Allow vertical scrolling */
+    color: #111;
+}
+
+.zen {
+    height: 100vh; /* full screen */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: url("./img/background3.png") no-repeat center center;
+    background-size: cover;
+    padding-top: 70px; /* push down so header doesn’t overlap */
+}
+
+  .minditem {
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+    padding: 25px;
+    margin-bottom: 30px;
+    width: 320px;
+    text-align: center;
+  }
+
+  .minditem h1 {
+    margin-bottom: 20px;
+    font-size: 1.4rem;
+    color: #006D2C;
+  }
+
+  .circle {
+    width: 150px;
+    height: 150px;
+    background: #A1D998;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 20px auto;
+    font-size: 1.2rem;
+    color: #00441b;
+    transition: transform 3s linear;
+  }
+
+  #start {
+    background: #41ab5d;
+    color: #fff;
+    border: none;
+    padding: 10px 16px;
+    margin: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: 0.3s;
+  }
+    #end {
+    background: #41ab5d;
+    color: #fff;
+    border: none;
+    padding: 10px 16px;
+    margin: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: 0.3s;
+  }
+
+  #soundbox button {
+    margin: 10px 0 ;
+  }
+
+  #start:hover {
+    background: #006D2C;
+  }
+
+    #end:hover {
+    background: #006D2C;
+  }
+
+  
+    #rainBtn{
+    width: 100%;
+    background: #f3fff4;
+    color: #00441b;
+    border: 2px solid #41ab5d;
+    height: 30px;
+    border-radius: 15px;
+    }
+  #rainBtn:hover {
+    background: #41ab5d;
+    color: white;
+  }
+
+      #riverBtn{
+    width: 100%;
+    background: #f3fff4;
+    color: #00441b;
+    border: 2px solid #41ab5d;
+    height: 30px;
+    border-radius: 15px;
+    }
+  #riverBtn:hover {
+    background: #41ab5d;
+    color: white;
+  }
+
+
+
+
+
+
+  
+
+
+
+  #countdown {
+    font-size: 2.2rem;
+    margin-bottom: 15px;
+    color: #006D2C;
+  }
+
+  @media (max-width: 400px) {
+    .minditem {
+      width: 90%;
+      padding: 20px;
+    }
+    .circle {
+      width: 120px;
+      height: 120px;
+      font-size: 1rem;
+    }
+  }
+
+
+  
+/* Footer */
+.footer {
+    background: #006D2C;
+    color: white;
+    padding: 2rem 10% 1rem;
+    margin-top: 3rem;
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.footer-section h3 {
+    color: #A1D998;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+.footer-section p {
+    color: rgba(255, 255, 255, 0.9);
+    line-height: 1.5;
+    margin-bottom: 0.5rem;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 0.6rem;
+}
+
+.footer-section ul li a {
+    color: rgba(255, 255, 255, 0.9);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-section ul li a:hover {
+    color: #A1D998;
+}
+
+.social-links {
+    display: flex;
+    gap: 0.8rem;
+    margin-top: 1rem;
+}
+
+.social-links a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 35px;
+    height: 35px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    color: white;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    font-size: 1.1rem;
+}
+
+.social-links a:hover {
+    background: #A1D998;
+    color: #00441b;
+}
+
+.newsletter-form {
+    display: flex;
+    gap: 0.5rem;
+    margin-top: 1rem;
+}
+
+.newsletter-form input {
+    flex: 1;
+    padding: 0.7rem;
+    border: none;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    outline: none;
+}
+
+.newsletter-form button {
+    padding: 0.7rem 1.2rem;
+    background: #A1D998;
+    color: #00441b;
+    border: none;
+    border-radius: 20px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.newsletter-form button:hover {
+    background: #41ab5d;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 1.5rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 0.9rem;
+}
+
+
+.footer-logo {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: #A1D998;
+}
+
+.footer-logo img {
+    width: 25px;
+    height: 25px;
+    margin-right: 8px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .footer {
+        padding: 2rem 5% 1rem;
+    }
+    
+    .footer-content {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    
+    .newsletter-form {
+        flex-direction: column;
+    }
+    
+    .social-links {
+        justify-content: center;
+    }
+}

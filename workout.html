@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Workout</title>
+    <link rel="stylesheet" href="./workout.css">
+    <script src="./workout.js" defer ></script>
+          <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <link rel="icon" type="image/png" href="./favicon/android-chrome-192x192.png">
+    
+</head>
+<body>
+
+    <header>
+    <a href="./index.html" class="logo"><img src="./favicon/android-chrome-192x192.png" alt="">Green Bite</a>
+    
+
+    <ul class="navbar">
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./about.html">About</a></li>
+        <li><a href="./recipe.html">Recipes</a></li>
+        <li><a href="./calculator.html">NutriCalc</a></li>
+        <li><a href="./mindfulness.html">Zen</a></li>
+        <li><a href="./workout.html">Train</a></li>
+    </ul>
+</header>
+
+<section class="workout" id="workout">
+<div class="workout-text">
+    <h1>Kickstart Your Workout</h1>
+    <p>Pick your body part and equipment, and our Workout Generator will create a plan for you.</p>
+    <p>Each exercise has a timer with sounds and animations to keep you on track.</p> 
+</div>
+</section>
+
+<div class="container">
+       
+        <form id="workout-form" class="form-container">
+            <div class="form-group">
+                <label for="body-part">Target Body Part:</label>
+                <select id="body-part" name="body-part" required>
+                    <option value="">Select body part...</option>
+                    <option value="arms">Arms</option>
+                    <option value="legs">Legs</option>
+                    <option value="full-body">Full Body</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label>Available Equipment:</label>
+                <div class="checkbox-group">
+                    <label class="checkbox-label">
+                        <input type="checkbox" name="equipment" value="none" checked>
+                        <span class="checkmark"></span>
+                        No Equipment
+                    </label>
+                    <label class="checkbox-label">
+                        <input type="checkbox" name="equipment" value="dumbbells">
+                        <span class="checkmark"></span>
+                        Dumbbells
+                    </label>
+                    <label class="checkbox-label">
+                        <input type="checkbox" name="equipment" value="resistance-bands">
+                        <span class="checkmark"></span>
+                        Resistance Bands
+                    </label>
+                </div>
+            </div>
+
+            <button type="submit" class="generate-btn">Generate Workout</button>
+        </form>
+
+        <div id="workout-container" class="workout-container hidden">
+            <h2>Your Workout Plan</h2>
+            <div id="workout-list" class="workout-list"></div>
+            <button id="start-workout" class="start-btn">Start Workout</button>
+        </div>
+
+        <div id="timer-container" class="timer-container hidden">
+            <div class="timer-header">
+                <h3 id="current-exercise">Exercise Name</h3>
+                <div class="progress">
+                    <span id="current-set">Set 1</span> of <span id="total-sets">3</span>
+                </div>
+            </div>
+            
+            <div class="timer-display">
+                <div id="timer" class="timer">00:30</div>
+                
+            </div>
+
+            <div class="timer-controls">
+                <button id="pause-btn" class="control-btn"> Pause</button>
+                <button id="skip-btn" class="control-btn">Skip</button>
+                <button id="stop-btn" class="control-btn stop"> Stop</button>
+            </div>
+
+        
+        </div>
+    </div>
+
+    <footer class="footer">
+    <div class="footer-content">
+        <!-- About Section -->
+        <div class="footer-section">
+            <div class="footer-logo">
+                <img src="./favicon/android-chrome-192x192.png" alt="GreenBite Logo">
+                GreenBite
+            </div>
+            <p>Your wellness companion for a healthier lifestyle.</p>
+            <div class="social-links">
+                <a href="https://www.facebook.com/" aria-label="Facebook"><i class="bx bxl-facebook"></i></a>
+                <a href="https://x.com/" aria-label="Twitter"><i class="bx bxl-twitter"></i></a>
+                <a href="https://www.instagram.com/accounts/login/?hl=en" aria-label="Instagram"><i class="bx bxl-instagram"></i></a>
+            </div>
+        </div>
+
+        
+        <div class="footer-section">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="./home.html">Home</a></li>
+                <li><a href="./about.html">About</a></li>
+                <li><a href="./recipe.html">Recipes</a></li>
+                <li><a href="./calculator.html">NutriCalc</a></li>
+                <li><a href="./mindfulness.html">Zen</a></li>
+                <li><a href="./workout.html">Train</a></li>
+            </ul>
+        </div>
+
+        <!-- Newsletter -->
+        <div class="footer-section">
+            <h3>Newsletter</h3>
+            <p>Get wellness tips and healthy recipes.</p>
+            <form class="newsletter-form" id="newsletterForm">
+                <input type="email" id="emailInput" placeholder="Enter your email" required>
+                <button type="submit">Subscribe</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <p>&copy; 2025 GreenBite. All rights reserved.</p>
+    </div>
+</footer>
+    
+    
+</body>
+</html>

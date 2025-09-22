@@ -1,0 +1,106 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mindfulness </title>
+    <script src="./mindfulness.js" defer></script>
+    <link rel="stylesheet" href="./mindfulness.css">
+          <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+     <link rel="icon" type="image/png" href="./favicon/favicon-16x16.png">
+</head>
+<body>
+    <header>
+    <a href="./index.html" class="logo"><img src="./favicon/android-chrome-192x192.png" alt="">Green Bite</a>
+    
+
+    <ul class="navbar">
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./about.html">About</a></li>
+        <li><a href="./recipe.html">Recipes</a></li>
+        <li><a href="./calculator.html">NutriCalc</a></li>
+        <li><a href="./mindfulness.html">Zen</a></li>
+        <li><a href="./workout.html">Train</a></li>
+    </ul>
+
+</header>
+   <section class="zen" id="zen">
+    <div class="minditem" id="mindfulness">
+        <h1>Your Calm Space</h1>
+        <div class="circle"><p id="breathLabel"></p></div>
+        <h2 id="countdown"></h2>
+        <div>
+            <button id="start">Start</button>
+            <button id="end">End</button>
+        </div>
+    </div>
+
+    <div class="minditem" id="soundbox">
+        <button id="rainBtn">Rainy Ambient Sound</button>
+        <audio id="rainAudio" loop>
+            <source src="./audio/rain.mp3" type="audio/mpeg">
+           
+        </audio> 
+
+    
+         <button id="riverBtn">River Ambient Sound</button>
+        <audio id="riverAudio" loop>
+            <source src="./audio/river.mp3" type="audio/mpeg">
+        </audio>
+    </div>
+    </section>
+
+
+     
+<footer class="footer">
+    <div class="footer-content">
+        <!-- About Section -->
+        <div class="footer-section">
+            <div class="footer-logo">
+                <img src="./favicon/android-chrome-192x192.png" alt="GreenBite Logo">
+                GreenBite
+            </div>
+            <p>Your wellness companion for a healthier lifestyle.</p>
+            <div class="social-links">
+                <a href="https://www.facebook.com/" aria-label="Facebook"><i class="bx bxl-facebook"></i></a>
+                <a href="https://x.com/" aria-label="Twitter"><i class="bx bxl-twitter"></i></a>
+                <a href="https://www.instagram.com/accounts/login/?hl=en" aria-label="Instagram"><i class="bx bxl-instagram"></i></a>
+            </div>
+        </div>
+
+        
+        <div class="footer-section">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./about.html">About</a></li>
+                <li><a href="./recipe.html">Recipes</a></li>
+                <li><a href="./calculator.html">NutriCalc</a></li>
+                <li><a href="./mindfulness.html">Zen</a></li>
+                <li><a href="./workout.html">Train</a></li>
+            </ul>
+        </div>
+
+        <!-- Newsletter -->
+        <div class="footer-section">
+            <h3>Newsletter</h3>
+            <p>Get wellness tips and healthy recipes.</p>
+            <form class="newsletter-form" id="newsletterForm">
+                <input type="email" id="emailInput" placeholder="Enter your email" required>
+                <button type="submit">Subscribe</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <p>&copy; 2025 GreenBite. All rights reserved.</p>
+    </div>
+</footer>
+
+</body>
+</html>
+
+
+

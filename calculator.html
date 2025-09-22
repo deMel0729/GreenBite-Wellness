@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Calculator</title>
+  <link rel="stylesheet" href="./calculator.css">
+  <script src="./calculator.js" defer></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+   <link rel="icon" type="image/png" href="./favicon/favicon-16x16.png">
+</head>
+<body>
+
+  
+     <header>
+    <a href="./index.html" class="logo"><img src="./favicon/android-chrome-192x192.png" alt="">Green Bite</a>
+    <div class ="bx bx-menu" id="menu-icon"></div>
+
+    <ul class="navbar">
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./about.html">About</a></li>
+        <li><a href="/recipe.html">Recipes</a></li>
+        <li><a href="./calculator.html">NutriCalc</a></li>
+        <li><a href="./mindfulness.html">Zen</a></li>
+        <li><a href="./workout.html">Train</a></li>
+    </ul>
+
+</header>
+
+
+  <main class="card" role="main">
+    <h1>User info</h1>
+    <p class="lead">Provide age, gender, height (cm), weight (kg) and activity level.</p>
+
+    <form id="userForm" novalidate>
+      <div class="field">
+        <label for="age">Age (years)</label>
+        <input id="age" name="age" type="number" min="0" max="120" step="1" required placeholder="e.g. 25">
+      </div>
+
+      <div class="field" style="align-items:flex-start;">
+        <label>Gender</label>
+        <div class="radios" role="radiogroup" aria-label="Gender">
+          <label><input type="radio" name="gender" value="Male" required> Male</label>
+          <label><input type="radio" name="gender" value="Female"> Female</label>
+        
+        </div>
+      </div>
+
+      <div class="field">
+        <label for="height">Height (cm)</label>
+        <input id="height" name="height" type="number" min="30" max="300" step="0.1" required placeholder="e.g. 170.5">
+      </div>
+
+      <div class="field">
+        <label for="weight">Weight (kg)</label>
+        <input id="weight" name="weight" type="number" min="2" max="600" step="0.1" required placeholder="e.g. 65.0">
+      </div>
+
+      <div class="field">
+        <label for="activity">Activity level</label>
+        <select id="activity" name="activity" required>
+          <option value="">-- choose --</option>
+          <option value="sedentary">Sedentary (little or no exercise)</option>
+          <option value="light">Lightly active (light exercise 1-3 days/week)</option>
+          <option value="moderate">Moderately active (3-5 days/week)</option>
+          <option value="very">Very active (6-7 days/week)</option>
+          <option value="extra">Extra active (physical job / training twice a day)</option>
+        </select>
+      </div>
+
+      <div class="actions">
+        <button type="submit">Submit</button>
+        <button type="button" id="resetBtn">Reset</button>
+      </div>
+    </form>
+
+    <!-- Output Section -->
+    <div id="output">
+      <h3>Results</h3>
+      <p><strong>BMR:</strong> <span id="bmrOutput">-</span> kcal/day</p>
+      <p><strong>TDEE:</strong> <span id="tdeeOutput">-</span> kcal/day</p>
+      <h4>Macro nutrients</h4>
+      <ul>
+        <li>Carbohydrates: <span id="carbOutput">-</span> g</li>
+        <li>Protein: <span id="proteinOutput">-</span> g</li>
+        <li>Fat: <span id="fatOutput">-</span> g</li>
+      </ul>
+    </div>
+
+
+    <footer class="footer">
+    <div class="footer-content">
+        <!-- About Section -->
+        <div class="footer-section">
+            <div class="footer-logo">
+                <img src="./favicon/android-chrome-192x192.png" alt="GreenBite Logo">
+                GreenBite
+            </div>
+            <p>Your wellness companion for a healthier lifestyle.</p>
+            <div class="social-links">
+                <a href="https://www.facebook.com/" aria-label="Facebook"><i class="bx bxl-facebook"></i></a>
+                <a href="https://x.com/" aria-label="Twitter"><i class="bx bxl-twitter"></i></a>
+                <a href="https://www.instagram.com/accounts/login/?hl=en" aria-label="Instagram"><i class="bx bxl-instagram"></i></a>
+            </div>
+        </div>
+
+        
+        <div class="footer-section">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="./home.html">Home</a></li>
+                <li><a href="./about.html">About</a></li>
+                <li><a href="./recipe.html">Recipes</a></li>
+                <li><a href="./calculator.html">NutriCalc</a></li>
+                <li><a href="./mindfulness.html">Zen</a></li>
+                <li><a href="./workout.html">Train</a></li>
+            </ul>
+        </div>
+
+        <!-- Newsletter -->
+        <div class="footer-section">
+            <h3>Newsletter</h3>
+            <p>Get wellness tips and healthy recipes.</p>
+            <form class="newsletter-form" id="newsletterForm">
+                <input type="email" id="emailInput" placeholder="Enter your email" required>
+                <button type="submit">Subscribe</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <p>&copy; 2025 GreenBite. All rights reserved.</p>
+    </div>
+</footer>
+  </main>
+   
+
+
+</body>
+</html>

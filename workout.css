@@ -1,0 +1,694 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    scroll-padding-top: 32px; 
+    list-style: none;
+    text-decoration: none;
+    scroll-behavior: smooth;
+    font-family: "Poppins", sans-serif;
+}
+
+*::selection{
+    color: white;
+    background-color: #A1D998;
+}
+
+  header {
+    position: fixed;
+    width: 100%;
+    top: 0px;
+    right: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 10%;
+    transition: 1s; 
+    z-index: 1000;
+    backdrop-filter: blur(2px);
+
+}
+
+
+header {
+    background: transparent;
+}
+
+
+header.scrolled {
+    background: #006D2C;  
+    transition: 0.3s;
+}
+
+header.scrolled .navbar a {
+    color: white;
+    transition: 0.3s;
+}
+
+header.scrolled .navbar a:hover {
+    background: #A1D998;
+    color: #00441b;
+    transition: 0.3s;
+}
+
+
+
+.logo{
+    display: flex;
+    align-items: center;
+    font-size: 16px ;
+    font-weight: 600;
+    color: #41ab5d;
+
+}
+
+.logo {
+    color: #41ab5d;
+    transition: color 1s;
+}
+
+/* logo text turns white when scrolled */
+header.scrolled .logo {
+    color: white;
+}
+
+.logo img{
+    width: 35px;
+    margin-right: 10px;
+
+}
+
+.navbar{
+    display: flex;
+    list-style: none;
+    
+
+   
+}
+
+.navbar a{
+    padding: 10px 20px;
+    font-size: 16px;
+    color:  #41ab5d;
+    font-weight: bolder;
+    text-decoration: none;
+        
+}
+
+.navbar a:hover{
+    color: white;
+    background-color: #A1D998;
+    border-radius: 25px;
+
+}
+
+
+.logo{
+    display: flex;
+    align-items: center;
+    font-size: 16px ;
+    font-weight: 600;
+    color: #41ab5d;
+    text-decoration: none;
+
+}
+
+.logo {
+    color: #41ab5d;
+    transition: color 1s;
+}
+
+
+header.scrolled .logo {
+    color: white;
+}
+
+.logo img{
+    width: 35px;
+    margin-right: 10px;
+
+}
+
+.workout{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    background: url(./img/gym2.jpg);
+    background-repeat:no-repeat ;
+    background-size: cover;
+    background-position: center;
+    gap: 16px; 
+   
+}
+
+.workout-text h1{
+    font-size: 72px;
+    color: white;
+    margin-top: 0px;  
+    margin-left: 50px;
+   
+}
+
+.workout-text p{
+   
+    color: white;
+    margin-top: 0px;  
+    font-size: medium;
+    margin-left: 50px;
+    font-weight: 2000px;
+
+}
+
+.workout-text h1 {
+  font-size: 2.8rem;
+  font-weight: 800;
+  color: white;
+  margin-bottom: 0.5em;
+  letter-spacing: 1px;
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+}
+
+.workout-text p {
+  color: #fff;
+  font-size: 1.15rem;
+  margin-bottom: 0.5em;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
+
+.modern-card {
+  background: #fff;
+  border-radius: 24px;
+  box-shadow: 0 8px 32px 0 #00441b22;
+  padding: 2.5em 2em;
+  max-width: 480px;
+  margin: 3em auto 2em auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5em;
+}
+
+.form-row {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+  margin-bottom: 1.5em;
+}
+
+.form-label {
+  font-size: 1.1em;
+  color: #006D2C;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+}
+
+.form-select {
+  background: #F6FFF8;
+  color: #00441b;
+  border: 2px solid #A1D998;
+  border-radius: 12px;
+  font-size: 1.05em;
+  padding: 0.7em 1.2em;
+  box-shadow: 0 2px 8px #A1D99822;
+  transition: border 0.2s;
+}
+
+.form-select:focus {
+  border: 2px solid #41ab5d;
+  outline: none;
+}
+
+.modern-btn {
+  background: linear-gradient(90deg, #41ab5d 0%, #006D2C 100%);
+  color: #fff;
+  font-weight: 700;
+  font-size: 1.15em;
+  border: none;
+  border-radius: 16px;
+  padding: 0.9em 2em;
+  cursor: pointer;
+  box-shadow: 0 2px 8px #00441b22;
+  transition: background 0.3s, transform 0.2s;
+  display: flex;
+  align-items: center;
+  gap: 0.7em;
+  margin-top: 1em;
+}
+
+.modern-btn:hover {
+  background: linear-gradient(90deg, #A1D998 0%, #41ab5d 100%);
+  color: #00441b;
+  transform: scale(1.05);
+}
+
+
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #41ab5d 0%, #006D2C 100%);
+    min-height: 100vh;
+    color: #333;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    color: white;
+    margin-bottom: 2rem;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+header p {
+    font-size: 1.1rem;
+    opacity: 0.9;
+}
+
+.form-container {
+    background: white;
+    border-radius: 20px;
+    padding: 2rem;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2rem;
+}
+
+.form-group {
+    margin-bottom: 2rem;
+}
+
+.form-group label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 0.8rem;
+    color: #444;
+    font-size: 1.1rem;
+}
+
+select {
+    width: 100%;
+    padding: 1rem;
+    border: 2px solid #e1e5e9;
+    border-radius: 12px;
+    font-size: 1rem;
+    background: white;
+    transition: all 0.3s ease;
+}
+
+select:focus {
+    outline: none;
+    border-color: #41ab5d;
+    box-shadow: 0 0 0 3px rgba(65, 171, 93, 0.1);
+}
+
+.checkbox-group {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.checkbox-label {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    padding: 0.8rem;
+    border-radius: 10px;
+    transition: background-color 0.2s ease;
+    font-weight: 500;
+}
+
+.checkbox-label:hover {
+    background-color: #f8f9fa;
+}
+
+.checkbox-label input[type="checkbox"] {
+    display: none;
+}
+
+.checkmark {
+    width: 20px;
+    height: 20px;
+    border: 2px solid #ddd;
+    border-radius: 4px;
+    margin-right: 0.8rem;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.checkbox-label input[type="checkbox"]:checked + .checkmark {
+    background-color: #41ab5d;
+    border-color: #41ab5d;
+}
+
+.checkbox-label input[type="checkbox"]:checked + .checkmark::after {
+    content: '✓';
+    position: absolute;
+    top: -2px;
+    left: 3px;
+    color: white;
+    font-weight: bold;
+}
+
+.generate-btn, .start-btn {
+    width: 100%;
+    padding: 1rem 2rem;
+    background: linear-gradient(135deg, #41ab5d 0%, #006D2C 100%);
+    color: white;
+    border: none;
+    border-radius: 12px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.generate-btn:hover, .start-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 25px rgba(65, 171, 93, 0.3);
+}
+
+.workout-container {
+    background: white;
+    border-radius: 20px;
+    padding: 2rem;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2rem;
+}
+
+.workout-container h2 {
+    color: #333;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    font-size: 1.8rem;
+}
+
+.workout-list {
+    margin-bottom: 2rem;
+}
+
+.exercise-item {
+    background: #A1D998;
+    padding: 1.2rem;
+    margin-bottom: 1rem;
+    border-radius: 12px;
+    border-left: 4px solid #006D2C;
+}
+
+.exercise-item h4 {
+    color: #00441b;
+    margin-bottom: 0.5rem;
+    font-size: 1.2rem;
+}
+
+.exercise-item p {
+    color: #006D2C;
+    margin-bottom: 0.3rem;
+}
+
+.timer-container {
+    background: white;
+    border-radius: 20px;
+    padding: 2rem;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.timer-header {
+    margin-bottom: 2rem;
+}
+
+.timer-header h3 {
+    font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 0.5rem;
+}
+
+.progress {
+    color: #666;
+    font-size: 1.1rem;
+}
+
+.timer-display {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.timer {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #41ab5d;
+    z-index: 2;
+}
+
+.timer-controls {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
+}
+
+.control-btn {
+    padding: 0.8rem 1.5rem;
+    border: 2px solid #41ab5d;
+    background: white;
+    color: #41ab5d;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: 600;
+}
+
+.control-btn:hover {
+    background: #41ab5d;
+    color: white;
+}
+
+.control-btn.stop {
+    border-color: #e74c3c;
+    color: #e74c3c;
+}
+
+.control-btn.stop:hover {
+    background: #e74c3c;
+    color: white;
+}
+
+.hidden {
+    display: none;
+}
+
+.timer.warning {
+    color: #e74c3c;
+    animation: pulse 0.5s infinite alternate;
+}
+
+@keyframes pulse {
+    from { transform: scale(1); }
+    to { transform: scale(1.05); }
+}
+
+.timer.finished {
+    color: #006D2C;
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 15px;
+    }
+    
+    header h1 {
+        font-size: 2rem;
+    }
+    
+    .form-container,
+    .workout-container,
+    .timer-container {
+        padding: 1.5rem;
+    }
+    
+    .checkbox-group {
+        grid-template-columns: 1fr;
+    }
+    
+    .timer {
+        font-size: 2.5rem;
+    }
+    
+    
+    .timer-controls {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .control-btn {
+        width: 200px;
+    }
+}
+
+
+/* Footer */
+.footer {
+    background: #006D2C;
+    color: white;
+    padding: 2rem 10% 1rem;
+    margin-top: 3rem;
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.footer-section h3 {
+    color: #A1D998;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+.footer-section p {
+    color: rgba(255, 255, 255, 0.9);
+    line-height: 1.5;
+    margin-bottom: 0.5rem;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 0.6rem;
+}
+
+.footer-section ul li a {
+    color: rgba(255, 255, 255, 0.9);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-section ul li a:hover {
+    color: #A1D998;
+}
+
+.social-links {
+    display: flex;
+    gap: 0.8rem;
+    margin-top: 1rem;
+}
+
+.social-links a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 35px;
+    height: 35px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    color: white;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    font-size: 1.1rem;
+}
+
+.social-links a:hover {
+    background: #A1D998;
+    color: #00441b;
+}
+
+.newsletter-form {
+    display: flex;
+    gap: 0.5rem;
+    margin-top: 1rem;
+}
+
+.newsletter-form input {
+    flex: 1;
+    padding: 0.7rem;
+    border: none;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    outline: none;
+}
+
+.newsletter-form button {
+    padding: 0.7rem 1.2rem;
+    background: #A1D998;
+    color: #00441b;
+    border: none;
+    border-radius: 20px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.newsletter-form button:hover {
+    background: #41ab5d;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 1.5rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 0.9rem;
+}
+
+.footer-logo {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: #A1D998;
+}
+
+.footer-logo img {
+    width: 25px;
+    height: 25px;
+    margin-right: 8px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .footer {
+        padding: 2rem 5% 1rem;
+    }
+    
+    .footer-content {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    
+    .newsletter-form {
+        flex-direction: column;
+    }
+    
+    .social-links {
+        justify-content: center;
+    }
+}
